@@ -1,0 +1,14 @@
+{
+    "version": "V9.3 Soft Hard-Sample Fine-Tuning",
+    "start_from": "/content/gdrive/MyDrive/stego_cnn_project/runs_V91_hard_negative_security_finetune/checkpoints/best_v91_hard_negative.pt",
+    "run_dir": "/content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune",
+    "img_size": 256,
+    "batch_size": 8,
+    "epochs": 30,
+    "patience": 10,
+    "hard_sample_weight": 2.0,
+    "normal_sample_weight": 1.0,
+    "lambda_old_xunet_max": 0.03,
+    "lambda_new_srnet_max": 0.012,
+    "goal": "Use hard samples softly to improve security without damaging recovery."
+}

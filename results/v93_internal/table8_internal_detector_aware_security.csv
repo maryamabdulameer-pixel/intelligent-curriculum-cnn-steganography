@@ -1,0 +1,4 @@
+Detector,Detection Rate,Hidden Rate,Interpretation
+XuNet-style detector,4.10%,95.90%,Low detection under high-frequency residual analysis
+SRNet-style detector,0.20%,99.80%,Near-zero detection under deep residual steganalysis
+Average internal detector-aware result,2.15%,97.85%,Strong internal detector resistance across both evaluated architectures

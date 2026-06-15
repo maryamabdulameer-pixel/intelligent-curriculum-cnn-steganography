@@ -1,0 +1,478 @@
+ Google Drive already mounted at /content/gdrive
+====================================================================================================
+V9.3 - SOFT HARD-SAMPLE FINE-TUNING
+====================================================================================================
+DEVICE: cuda
+PROJECT_ROOT: /content/gdrive/MyDrive/stego_cnn_project
+PAIR_ROOT: /content/gdrive/MyDrive/stego_cnn_project/coco_20k_stego_pairs
+START_CKPT: /content/gdrive/MyDrive/stego_cnn_project/runs_V91_hard_negative_security_finetune/checkpoints/best_v91_hard_negative.pt
+V92_HARD_JSON: /content/gdrive/MyDrive/stego_cnn_project/runs_V92_hard_sample_mining_finetune/hard_samples/train_hard_indices.json
+RUN_DIR: /content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune
+Dataset: /content/gdrive/MyDrive/stego_cnn_project/coco_20k_stego_pairs/train/covers
+covers=8000, secrets=8000
+Dataset: /content/gdrive/MyDrive/stego_cnn_project/coco_20k_stego_pairs/val/covers
+covers=1000, secrets=1000
+Dataset: /content/gdrive/MyDrive/stego_cnn_project/coco_20k_stego_pairs/test/covers
+covers=1000, secrets=1000
+Train samples: 8000
+Val samples  : 1000
+Test samples : 1000
+Starting new V9.3 from best V9.1 checkpoint...
+Loaded best V9.1.
+Best V9.1 epoch: 7
+Best V9.1 score: 184.87809654577674
+
+Loading hard samples from V9.2:
+/content/gdrive/MyDrive/stego_cnn_project/runs_V92_hard_sample_mining_finetune/hard_samples/train_hard_indices.json
+Loaded hard samples: 755
+
+Weighted train loader created.
+Train batches: 1000
+Hard sample count: 755
+Hard sample raw ratio: 0.094375
+Expected weighted hard ratio: 0.1724728726442033
+Hard sample weight: 2.0
+Normal sample weight: 1.0
+
+====================================================================================================
+START V9.3 SOFT HARD-SAMPLE FINE-TUNING
+====================================================================================================
+V9.3 Eval val:   0%|          | 0/125 [00:00<?, ?it/s]>>> NEW V9.3 BEST SAVED
+Epoch [1/30] | coverY=67.32 | secretY=31.08 | secretRGB=28.83 | BER=0.0340 | OldXuDet=0.0320 | NewSRDet=0.0010 | AvgDet=0.0165 | AvgHidden=0.9835 | HardRatio=0.1731 | Mask=0.7196 | alpha=0.05964 | score=197.3106 | best=197.3106 | no_improve=0/10 | time=163.3s
+
+===================================================================================================================
+V9.3 EPOCH 1 RESULT
+===================================================================================================================
+Embedding Loss        : 0.103187
+Recovery Loss         : 0.018364
+Old XuNet Train Acc   : 0.6188
+New SRNet Train Acc   : 0.9173
+Hard Batch Ratio      : 0.1731
+-------------------------------------------------------------------------------------------------------------------
+Cover PSNR-Y          : 67.3165
+Cover PSNR-RGB        : 51.3743
+Cover SSIM-Y          : 0.999945
+Cover NCC-Y           : 0.999997
+-------------------------------------------------------------------------------------------------------------------
+Secret PSNR-Y         : 31.0829
+Secret PSNR-RGB       : 28.8346
+Secret SSIM-Y         : 0.930713
+Secret NCC-Y          : 0.990827
+Secret BER            : 0.034025
+-------------------------------------------------------------------------------------------------------------------
+Old XuNet Detection   : 0.0320
+Old XuNet Hidden      : 0.9680
+New SRNet Detection   : 0.0010
+New SRNet Hidden      : 0.9990
+Average Detection     : 0.0165
+Average Hidden        : 0.9835
+-------------------------------------------------------------------------------------------------------------------
+Mask Mean             : 0.719641
+Alpha                 : 0.059643
+V9.3 Score            : 197.310624
+Time sec              : 163.28
+===================================================================================================================
+
+Epoch [2/30] | coverY=66.01 | secretY=31.51 | secretRGB=29.11 | BER=0.0330 | OldXuDet=0.9120 | NewSRDet=0.0000 | AvgDet=0.4560 | AvgHidden=0.5440 | HardRatio=0.1745 | Mask=0.7198 | alpha=0.05968 | score=18.0963 | best=197.3106 | no_improve=1/10 | time=137.4s
+
+===================================================================================================================
+V9.3 EPOCH 2 RESULT
+===================================================================================================================
+Embedding Loss        : 0.113651
+Recovery Loss         : 0.018455
+Old XuNet Train Acc   : 0.6152
+New SRNet Train Acc   : 0.9273
+Hard Batch Ratio      : 0.1745
+-------------------------------------------------------------------------------------------------------------------
+Cover PSNR-Y          : 66.0128
+Cover PSNR-RGB        : 50.9663
+Cover SSIM-Y          : 0.999918
+Cover NCC-Y           : 0.999997
+-------------------------------------------------------------------------------------------------------------------
+Secret PSNR-Y         : 31.5090
+Secret PSNR-RGB       : 29.1077
+Secret SSIM-Y         : 0.932218
+Secret NCC-Y          : 0.991198
+Secret BER            : 0.033047
+-------------------------------------------------------------------------------------------------------------------
+Old XuNet Detection   : 0.9120
+Old XuNet Hidden      : 0.0880
+New SRNet Detection   : 0.0000
+New SRNet Hidden      : 1.0000
+Average Detection     : 0.4560
+Average Hidden        : 0.5440
+-------------------------------------------------------------------------------------------------------------------
+Mask Mean             : 0.719777
+Alpha                 : 0.059680
+V9.3 Score            : 18.096286
+Time sec              : 137.41
+===================================================================================================================
+
+Epoch [3/30] | coverY=66.31 | secretY=31.57 | secretRGB=29.14 | BER=0.0334 | OldXuDet=0.4330 | NewSRDet=0.0170 | AvgDet=0.2250 | AvgHidden=0.7750 | HardRatio=0.1742 | Mask=0.7199 | alpha=0.05971 | score=76.8592 | best=197.3106 | no_improve=2/10 | time=137.9s
+
+===================================================================================================================
+V9.3 EPOCH 3 RESULT
+===================================================================================================================
+Embedding Loss        : 0.123463
+Recovery Loss         : 0.018671
+Old XuNet Train Acc   : 0.5864
+New SRNet Train Acc   : 0.9106
+Hard Batch Ratio      : 0.1742
+-------------------------------------------------------------------------------------------------------------------
+Cover PSNR-Y          : 66.3096
+Cover PSNR-RGB        : 50.9630
+Cover SSIM-Y          : 0.999927
+Cover NCC-Y           : 0.999997
+-------------------------------------------------------------------------------------------------------------------
+Secret PSNR-Y         : 31.5673
+Secret PSNR-RGB       : 29.1416
+Secret SSIM-Y         : 0.933707
+Secret NCC-Y          : 0.991082
+Secret BER            : 0.033408
+-------------------------------------------------------------------------------------------------------------------
+Old XuNet Detection   : 0.4330
+Old XuNet Hidden      : 0.5670
+New SRNet Detection   : 0.0170
+New SRNet Hidden      : 0.9830
+Average Detection     : 0.2250
+Average Hidden        : 0.7750
+-------------------------------------------------------------------------------------------------------------------
+Mask Mean             : 0.719914
+Alpha                 : 0.059714
+V9.3 Score            : 76.859212
+Time sec              : 137.86
+===================================================================================================================
+
+Epoch [4/30] | coverY=66.44 | secretY=30.60 | secretRGB=28.40 | BER=0.0336 | OldXuDet=0.1960 | NewSRDet=0.0190 | AvgDet=0.1075 | AvgHidden=0.8925 | HardRatio=0.1663 | Mask=0.7198 | alpha=0.05972 | score=13.1760 | best=197.3106 | no_improve=3/10 | time=137.9s
+
+===================================================================================================================
+V9.3 EPOCH 4 RESULT
+===================================================================================================================
+Embedding Loss        : 0.134119
+Recovery Loss         : 0.018765
+Old XuNet Train Acc   : 0.5743
+New SRNet Train Acc   : 0.9264
+Hard Batch Ratio      : 0.1663
+-------------------------------------------------------------------------------------------------------------------
+Cover PSNR-Y          : 66.4358
+Cover PSNR-RGB        : 51.1591
+Cover SSIM-Y          : 0.999925
+Cover NCC-Y           : 0.999997
+-------------------------------------------------------------------------------------------------------------------
+Secret PSNR-Y         : 30.6017
+Secret PSNR-RGB       : 28.3957
+Secret SSIM-Y         : 0.923340
+Secret NCC-Y          : 0.990881
+Secret BER            : 0.033639
+-------------------------------------------------------------------------------------------------------------------
+Old XuNet Detection   : 0.1960
+Old XuNet Hidden      : 0.8040
+New SRNet Detection   : 0.0190
+New SRNet Hidden      : 0.9810
+Average Detection     : 0.1075
+Average Hidden        : 0.8925
+-------------------------------------------------------------------------------------------------------------------
+Mask Mean             : 0.719762
+Alpha                 : 0.059722
+V9.3 Score            : 13.176049
+Time sec              : 137.89
+===================================================================================================================
+
+Epoch [5/30] | coverY=66.52 | secretY=31.48 | secretRGB=29.08 | BER=0.0349 | OldXuDet=0.7560 | NewSRDet=0.0380 | AvgDet=0.3970 | AvgHidden=0.6030 | HardRatio=0.1745 | Mask=0.7199 | alpha=0.05972 | score=34.3377 | best=197.3106 | no_improve=4/10 | time=137.9s
+
+===================================================================================================================
+V9.3 EPOCH 5 RESULT
+===================================================================================================================
+Embedding Loss        : 0.111600
+Recovery Loss         : 0.019050
+Old XuNet Train Acc   : 0.5932
+New SRNet Train Acc   : 0.9222
+Hard Batch Ratio      : 0.1745
+-------------------------------------------------------------------------------------------------------------------
+Cover PSNR-Y          : 66.5186
+Cover PSNR-RGB        : 50.7915
+Cover SSIM-Y          : 0.999933
+Cover NCC-Y           : 0.999997
+-------------------------------------------------------------------------------------------------------------------
+Secret PSNR-Y         : 31.4839
+Secret PSNR-RGB       : 29.0801
+Secret SSIM-Y         : 0.940036
+Secret NCC-Y          : 0.991466
+Secret BER            : 0.034939
+-------------------------------------------------------------------------------------------------------------------
+Old XuNet Detection   : 0.7560
+Old XuNet Hidden      : 0.2440
+New SRNet Detection   : 0.0380
+New SRNet Hidden      : 0.9620
+Average Detection     : 0.3970
+Average Hidden        : 0.6030
+-------------------------------------------------------------------------------------------------------------------
+Mask Mean             : 0.719902
+Alpha                 : 0.059720
+V9.3 Score            : 34.337695
+Time sec              : 137.95
+===================================================================================================================
+
+Epoch [6/30] | coverY=67.00 | secretY=30.59 | secretRGB=28.39 | BER=0.0361 | OldXuDet=0.0880 | NewSRDet=0.0000 | AvgDet=0.0440 | AvgHidden=0.9560 | HardRatio=0.1735 | Mask=0.7196 | alpha=0.05975 | score=8.2529 | best=197.3106 | no_improve=5/10 | time=138.0s
+
+===================================================================================================================
+V9.3 EPOCH 6 RESULT
+===================================================================================================================
+Embedding Loss        : 0.145891
+Recovery Loss         : 0.019083
+Old XuNet Train Acc   : 0.5704
+New SRNet Train Acc   : 0.9327
+Hard Batch Ratio      : 0.1735
+-------------------------------------------------------------------------------------------------------------------
+Cover PSNR-Y          : 67.0017
+Cover PSNR-RGB        : 51.1310
+Cover SSIM-Y          : 0.999933
+Cover NCC-Y           : 0.999997
+-------------------------------------------------------------------------------------------------------------------
+Secret PSNR-Y         : 30.5855
+Secret PSNR-RGB       : 28.3860
+Secret SSIM-Y         : 0.934747
+Secret NCC-Y          : 0.990962
+Secret BER            : 0.036072
+-------------------------------------------------------------------------------------------------------------------
+Old XuNet Detection   : 0.0880
+Old XuNet Hidden      : 0.9120
+New SRNet Detection   : 0.0000
+New SRNet Hidden      : 1.0000
+Average Detection     : 0.0440
+Average Hidden        : 0.9560
+-------------------------------------------------------------------------------------------------------------------
+Mask Mean             : 0.719602
+Alpha                 : 0.059749
+V9.3 Score            : 8.252909
+Time sec              : 137.97
+===================================================================================================================
+
+Epoch [7/30] | coverY=66.44 | secretY=31.21 | secretRGB=28.98 | BER=0.0333 | OldXuDet=0.9390 | NewSRDet=0.0010 | AvgDet=0.4700 | AvgHidden=0.5300 | HardRatio=0.1785 | Mask=0.7198 | alpha=0.05974 | score=13.8895 | best=197.3106 | no_improve=6/10 | time=137.9s
+
+===================================================================================================================
+V9.3 EPOCH 7 RESULT
+===================================================================================================================
+Embedding Loss        : 0.112167
+Recovery Loss         : 0.019020
+Old XuNet Train Acc   : 0.5887
+New SRNet Train Acc   : 0.9261
+Hard Batch Ratio      : 0.1785
+-------------------------------------------------------------------------------------------------------------------
+Cover PSNR-Y          : 66.4385
+Cover PSNR-RGB        : 51.0895
+Cover SSIM-Y          : 0.999926
+Cover NCC-Y           : 0.999997
+-------------------------------------------------------------------------------------------------------------------
+Secret PSNR-Y         : 31.2101
+Secret PSNR-RGB       : 28.9765
+Secret SSIM-Y         : 0.930474
+Secret NCC-Y          : 0.991170
+Secret BER            : 0.033303
+-------------------------------------------------------------------------------------------------------------------
+Old XuNet Detection   : 0.9390
+Old XuNet Hidden      : 0.0610
+New SRNet Detection   : 0.0010
+New SRNet Hidden      : 0.9990
+Average Detection     : 0.4700
+Average Hidden        : 0.5300
+-------------------------------------------------------------------------------------------------------------------
+Mask Mean             : 0.719816
+Alpha                 : 0.059738
+V9.3 Score            : 13.889542
+Time sec              : 137.94
+===================================================================================================================
+
+Epoch [8/30] | coverY=66.18 | secretY=31.41 | secretRGB=28.92 | BER=0.0349 | OldXuDet=0.7720 | NewSRDet=0.0240 | AvgDet=0.3980 | AvgHidden=0.6020 | HardRatio=0.1755 | Mask=0.7200 | alpha=0.05970 | score=33.0790 | best=197.3106 | no_improve=7/10 | time=137.9s
+
+===================================================================================================================
+V9.3 EPOCH 8 RESULT
+===================================================================================================================
+Embedding Loss        : 0.145995
+Recovery Loss         : 0.019389
+Old XuNet Train Acc   : 0.5807
+New SRNet Train Acc   : 0.9285
+Hard Batch Ratio      : 0.1755
+-------------------------------------------------------------------------------------------------------------------
+Cover PSNR-Y          : 66.1793
+Cover PSNR-RGB        : 50.8669
+Cover SSIM-Y          : 0.999927
+Cover NCC-Y           : 0.999997
+-------------------------------------------------------------------------------------------------------------------
+Secret PSNR-Y         : 31.4143
+Secret PSNR-RGB       : 28.9240
+Secret SSIM-Y         : 0.935158
+Secret NCC-Y          : 0.991041
+Secret BER            : 0.034929
+-------------------------------------------------------------------------------------------------------------------
+Old XuNet Detection   : 0.7720
+Old XuNet Hidden      : 0.2280
+New SRNet Detection   : 0.0240
+New SRNet Hidden      : 0.9760
+Average Detection     : 0.3980
+Average Hidden        : 0.6020
+-------------------------------------------------------------------------------------------------------------------
+Mask Mean             : 0.719957
+Alpha                 : 0.059705
+V9.3 Score            : 33.078956
+Time sec              : 137.93
+===================================================================================================================
+
+Epoch [9/30] | coverY=66.61 | secretY=30.75 | secretRGB=28.48 | BER=0.0362 | OldXuDet=0.2560 | NewSRDet=0.0110 | AvgDet=0.1335 | AvgHidden=0.8665 | HardRatio=0.1694 | Mask=0.7205 | alpha=0.05967 | score=-83.4049 | best=197.3106 | no_improve=8/10 | time=137.8s
+
+===================================================================================================================
+V9.3 EPOCH 9 RESULT
+===================================================================================================================
+Embedding Loss        : 0.145507
+Recovery Loss         : 0.019465
+Old XuNet Train Acc   : 0.5714
+New SRNet Train Acc   : 0.9301
+Hard Batch Ratio      : 0.1694
+-------------------------------------------------------------------------------------------------------------------
+Cover PSNR-Y          : 66.6132
+Cover PSNR-RGB        : 51.0791
+Cover SSIM-Y          : 0.999937
+Cover NCC-Y           : 0.999997
+-------------------------------------------------------------------------------------------------------------------
+Secret PSNR-Y         : 30.7501
+Secret PSNR-RGB       : 28.4772
+Secret SSIM-Y         : 0.932629
+Secret NCC-Y          : 0.990994
+Secret BER            : 0.036163
+-------------------------------------------------------------------------------------------------------------------
+Old XuNet Detection   : 0.2560
+Old XuNet Hidden      : 0.7440
+New SRNet Detection   : 0.0110
+New SRNet Hidden      : 0.9890
+Average Detection     : 0.1335
+Average Hidden        : 0.8665
+-------------------------------------------------------------------------------------------------------------------
+Mask Mean             : 0.720473
+Alpha                 : 0.059666
+V9.3 Score            : -83.404941
+Time sec              : 137.77
+===================================================================================================================
+
+Epoch [10/30] | coverY=66.43 | secretY=31.18 | secretRGB=28.93 | BER=0.0343 | OldXuDet=0.6210 | NewSRDet=0.0070 | AvgDet=0.3140 | AvgHidden=0.6860 | HardRatio=0.1727 | Mask=0.7200 | alpha=0.05969 | score=52.8877 | best=197.3106 | no_improve=9/10 | time=137.6s
+
+===================================================================================================================
+V9.3 EPOCH 10 RESULT
+===================================================================================================================
+Embedding Loss        : 0.112275
+Recovery Loss         : 0.019032
+Old XuNet Train Acc   : 0.5893
+New SRNet Train Acc   : 0.9331
+Hard Batch Ratio      : 0.1727
+-------------------------------------------------------------------------------------------------------------------
+Cover PSNR-Y          : 66.4345
+Cover PSNR-RGB        : 50.9718
+Cover SSIM-Y          : 0.999928
+Cover NCC-Y           : 0.999997
+-------------------------------------------------------------------------------------------------------------------
+Secret PSNR-Y         : 31.1814
+Secret PSNR-RGB       : 28.9327
+Secret SSIM-Y         : 0.936665
+Secret NCC-Y          : 0.991272
+Secret BER            : 0.034298
+-------------------------------------------------------------------------------------------------------------------
+Old XuNet Detection   : 0.6210
+Old XuNet Hidden      : 0.3790
+New SRNet Detection   : 0.0070
+New SRNet Hidden      : 0.9930
+Average Detection     : 0.3140
+Average Hidden        : 0.6860
+-------------------------------------------------------------------------------------------------------------------
+Mask Mean             : 0.719988
+Alpha                 : 0.059694
+V9.3 Score            : 52.887736
+Time sec              : 137.60
+===================================================================================================================
+
+Epoch [11/30] | coverY=66.74 | secretY=31.12 | secretRGB=28.73 | BER=0.0347 | OldXuDet=0.5430 | NewSRDet=0.0120 | AvgDet=0.2775 | AvgHidden=0.7225 | HardRatio=0.1740 | Mask=0.7198 | alpha=0.05966 | score=62.1439 | best=197.3106 | no_improve=10/10 | time=137.8s
+
+===================================================================================================================
+V9.3 EPOCH 11 RESULT
+===================================================================================================================
+Embedding Loss        : 0.147096
+Recovery Loss         : 0.019142
+Old XuNet Train Acc   : 0.5784
+New SRNet Train Acc   : 0.9392
+Hard Batch Ratio      : 0.1740
+-------------------------------------------------------------------------------------------------------------------
+Cover PSNR-Y          : 66.7422
+Cover PSNR-RGB        : 51.3450
+Cover SSIM-Y          : 0.999929
+Cover NCC-Y           : 0.999997
+-------------------------------------------------------------------------------------------------------------------
+Secret PSNR-Y         : 31.1189
+Secret PSNR-RGB       : 28.7283
+Secret SSIM-Y         : 0.929931
+Secret NCC-Y          : 0.990826
+Secret BER            : 0.034731
+-------------------------------------------------------------------------------------------------------------------
+Old XuNet Detection   : 0.5430
+Old XuNet Hidden      : 0.4570
+New SRNet Detection   : 0.0120
+New SRNet Hidden      : 0.9880
+Average Detection     : 0.2775
+Average Hidden        : 0.7225
+-------------------------------------------------------------------------------------------------------------------
+Mask Mean             : 0.719754
+Alpha                 : 0.059661
+V9.3 Score            : 62.143871
+Time sec              : 137.80
+===================================================================================================================
+
+
+EARLY STOPPING: no improvement for 10 epochs.
+
+V9.3 fine-tuning finished.
+Best checkpoint: /content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune/checkpoints/best_v93_soft_hard_sample.pt
+Last checkpoint : /content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune/checkpoints/last_v93_soft_hard_sample.pt
+
+====================================================================================================
+LOADING BEST V9.3 CHECKPOINT FOR FINAL TEST
+====================================================================================================
+Best V9.3 epoch: 1
+Best V9.3 val score: 197.3106240399927
+V9.3 Eval test:   0%|          | 0/125 [00:00<?, ?it/s]                                                                 
+====================================================================================================
+FINAL TEST SUMMARY - V9.3
+====================================================================================================
+version: V9.3 Soft Hard-Sample Fine-Tuning
+best_epoch: 1
+best_val_score: 197.310624
+test_score: 196.169354
+cover_psnr_y: 67.335719
+cover_psnr_rgb: 51.384716
+cover_ssim_y: 0.999949
+cover_ncc_y: 0.999998
+secret_psnr_y: 31.029651
+secret_psnr_rgb: 28.775241
+secret_ssim_y: 0.931786
+secret_ncc_y: 0.991144
+secret_ber: 0.032426
+old_xunet_detection: 0.041000
+old_xunet_hidden: 0.959000
+new_srnet_detection: 0.002000
+new_srnet_hidden: 0.998000
+avg_detection: 0.021500
+avg_hidden: 0.978500
+mask_mean: 0.719672
+alpha: 0.059643
+num_hard_train_samples: 755
+hard_train_ratio: 0.094375
+hard_sample_weight: 2.000000
+expected_weighted_hard_ratio: 0.172473
+
+Saved files:
+RUN_DIR: /content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune
+Best checkpoint: /content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune/checkpoints/best_v93_soft_hard_sample.pt
+Last checkpoint: /content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune/checkpoints/last_v93_soft_hard_sample.pt
+Training log: /content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune/metrics/training_log_v93.csv
+Hard indices used: /content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune/hard_samples/train_hard_indices_used_from_v92.json
+Best summary CSV: /content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune/best/best_readable_summary_v93.csv
+Final summary CSV: /content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune/metrics/final_test_summary_v93.csv
+Final summary JSON: /content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune/metrics/final_test_summary_v93.json
+Final summary TXT: /content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune/metrics/final_test_summary_v93.txt
+Panels saved in: /content/gdrive/MyDrive/stego_cnn_project/runs_V93_soft_hard_sample_finetune/best

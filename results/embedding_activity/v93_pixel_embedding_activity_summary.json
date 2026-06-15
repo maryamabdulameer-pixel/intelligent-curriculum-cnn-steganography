@@ -1,0 +1,11 @@
+{
+    "test_pairs": 1000,
+    "alpha": 0.059643033891916275,
+    "mean_activity_over_images": 0.002476999985286966,
+    "std_activity_over_images": 0.0007698890905653806,
+    "min_activity_over_images": 0.000903070904314518,
+    "max_activity_over_images": 0.007194713689386845,
+    "selected_sample_idx": 115,
+    "selected_sample_mean_activity": 0.007194713689386845,
+    "selected_sample_max_activity": 0.056468695402145386
+}

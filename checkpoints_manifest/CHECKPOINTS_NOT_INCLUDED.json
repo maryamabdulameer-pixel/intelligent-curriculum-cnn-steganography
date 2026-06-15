@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "best_v93_soft_hard_sample.pt",
+    "source_folder": "runs_V93_soft_hard_sample_finetune/checkpoints",
+    "size_mb": 45.26,
+    "note": "Final V9.3 best checkpoint. Not included in the GitHub-ready package due to file-size limitations; upload separately via Git LFS or provide upon reasonable request."
+  },
+  {
+    "filename": "last_v93_soft_hard_sample.pt",
+    "source_folder": "runs_V93_soft_hard_sample_finetune/checkpoints",
+    "size_mb": 45.26,
+    "note": "Final V9.3 last checkpoint. Not included in the GitHub-ready package due to file-size limitations; upload separately via Git LFS or provide upon reasonable request."
+  },
+  {
+    "filename": "epoch_5_v93.pt",
+    "source_folder": "runs_V93_soft_hard_sample_finetune/checkpoints",
+    "size_mb": 15.12,
+    "note": "Intermediate V9.3 checkpoint. Not included in the GitHub-ready package due to file-size limitations."
+  },
+  {
+    "filename": "epoch_10_v93.pt",
+    "source_folder": "runs_V93_soft_hard_sample_finetune/checkpoints",
+    "size_mb": 15.12,
+    "note": "Intermediate V9.3 checkpoint. Not included in the GitHub-ready package due to file-size limitations."
+  }
+]

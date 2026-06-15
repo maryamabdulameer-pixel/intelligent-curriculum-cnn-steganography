@@ -1,0 +1,8 @@
+Attack Condition,Cover PSNR-Y (dB),Secret PSNR-Y (dB),Secret SSIM-Y,Secret NCC-Y,BER
+No attack (clean),66.77,31.48,0.9912,0.9916,0.0275
+JPEG-like (QF=75),36.53,12.09,0.3635,0.3779,0.3358
+Gaussian noise (sigma=0.01),43.51,13.75,0.6196,0.6301,0.2381
+Bilinear resizing (256->224->256),33.51,14.17,0.5035,0.7794,0.3426
+Soft Gaussian blur (sigma=1.0),32.51,14.35,0.5157,0.9605,0.3567
+Brightness scaling (x0.90),25.95,30.31,0.9884,0.9915,0.0261
+Contrast adjustment (x0.90),33.03,30.31,0.9885,0.9915,0.0261

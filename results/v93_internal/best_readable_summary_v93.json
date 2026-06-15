@@ -1,0 +1,21 @@
+{
+    "best_epoch": 1,
+    "best_score": 197.3106240399927,
+    "cover_psnr_y": 67.31647485351563,
+    "cover_psnr_rgb": 51.37433935546875,
+    "cover_ssim_y": 0.9999447188377381,
+    "cover_ncc_y": 0.9999974660873413,
+    "secret_psnr_y": 31.08287158203125,
+    "secret_psnr_rgb": 28.834565139770508,
+    "secret_ssim_y": 0.9307126731872558,
+    "secret_ncc_y": 0.9908268723487854,
+    "secret_ber": 0.03402455748617649,
+    "old_xunet_detection": 0.032,
+    "old_xunet_hidden": 0.968,
+    "new_srnet_detection": 0.001,
+    "new_srnet_hidden": 0.999,
+    "avg_detection": 0.0165,
+    "avg_hidden": 0.9835,
+    "mask_mean": 0.719640625,
+    "alpha": 0.059643033891916275
+}

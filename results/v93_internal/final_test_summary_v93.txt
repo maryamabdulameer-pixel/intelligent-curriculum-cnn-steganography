@@ -1,0 +1,25 @@
+version: V9.3 Soft Hard-Sample Fine-Tuning
+best_epoch: 1
+best_val_score: 197.3106240399927
+test_score: 196.16935420661866
+cover_psnr_y: 67.3357186279297
+cover_psnr_rgb: 51.384715606689454
+cover_ssim_y: 0.999948829650879
+cover_ncc_y: 0.9999976482391357
+secret_psnr_y: 31.029651428222657
+secret_psnr_rgb: 28.775240661621094
+secret_ssim_y: 0.9317863636016845
+secret_ncc_y: 0.9911439938545227
+secret_ber: 0.032425604239106176
+old_xunet_detection: 0.041
+old_xunet_hidden: 0.959
+new_srnet_detection: 0.002
+new_srnet_hidden: 0.998
+avg_detection: 0.0215
+avg_hidden: 0.9785
+mask_mean: 0.719671875
+alpha: 0.059643033891916275
+num_hard_train_samples: 755
+hard_train_ratio: 0.094375
+hard_sample_weight: 2.0
+expected_weighted_hard_ratio: 0.1724728726442033

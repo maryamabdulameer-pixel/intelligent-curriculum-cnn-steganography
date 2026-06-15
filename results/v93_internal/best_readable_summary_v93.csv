@@ -1,0 +1,2 @@
+best_epoch,best_score,cover_psnr_y,cover_psnr_rgb,cover_ssim_y,cover_ncc_y,secret_psnr_y,secret_psnr_rgb,secret_ssim_y,secret_ncc_y,secret_ber,old_xunet_detection,old_xunet_hidden,new_srnet_detection,new_srnet_hidden,avg_detection,avg_hidden,mask_mean,alpha
+1,197.3106240399927,67.31647485351563,51.37433935546875,0.9999447188377381,0.9999974660873413,31.08287158203125,28.834565139770508,0.9307126731872558,0.9908268723487854,0.03402455748617649,0.032,0.968,0.001,0.999,0.0165,0.9835,0.719640625,0.059643033891916275
